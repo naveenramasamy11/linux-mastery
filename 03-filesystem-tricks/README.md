@@ -1,27 +1,15 @@
-# 03 - Filesystem Tricks & Techniques
+# 03 — Filesystem Tricks
 
-Master the Linux filesystem with advanced techniques for navigating, manipulating, and optimizing file operations.
+Advanced Linux filesystem techniques and wizardry.
 
-## Contents
+## Topics
 
-- **day01-inodes-hardlinks-symlinks.md** — Deep dive into inodes, hard links, symbolic links, and link operations
-- **day02-find-mastery.md** — Advanced find command techniques, filtering, and optimization
-- **day03-xargs-power.md** — Command chaining with xargs, parallel execution, and practical examples
-- **day04-bind-mounts-overlays.md** — Mounting techniques, bind mounts, and overlay filesystems
+- **day01-inodes-deep-dive** — Understanding inodes, hard links, soft links, and inode exhaustion
+- **day02-find-mastery** — Advanced `find` command patterns, -exec, predicates, and optimization
+- **day03-xargs-pipe-patterns** — Command composition with xargs, parallel processing, and tricky edge cases
+- **day04-bind-mounts-overlay** — Bind mounts, loop devices, overlay filesystems, and mount tricks
+- **day05-fstab-mount-internals** — /etc/fstab deep dive, mount options, automount, and mount namespaces
 
-## Quick Topics
+## Why This Matters
 
-- Inode structure and management
-- Hard links vs soft links
-- Advanced find patterns
-- xargs for batch processing
-- Bind mounts and namespaces
-- Filesystem caching
-- Sparse files
-- Extended attributes
-
-## Key Commands
-
-```bash
-find, ln, stat, lsof, mount, xargs, du, dd, rsync, getfattr, setfattr
-```
+DevOps engineers and SREs constantly interact with filesystems at scale. Whether debugging disk space issues on production EC2 instances, optimizing container image builds, or managing NFS mounts in Kubernetes clusters, deep filesystem knowledge directly impacts system reliability and performance. These tricks will make you faster.
